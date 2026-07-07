@@ -1,0 +1,6 @@
+.property-form-page { padding: 48px 24px 100px; max-width: 720px; margin: 0 auto; }
+.form-title { font-size: 32px; margin: 8px 0 28px; }
+.property-form {
+  background: var(--parchment);
+  padding: 32px;
+}

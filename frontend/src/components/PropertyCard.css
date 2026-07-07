@@ -1,0 +1,56 @@
+.p-card {
+  display: block;
+  background: var(--parchment);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.p-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(22, 36, 31, 0.12);
+}
+
+.p-card-image {
+  height: 190px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.p-card-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--ink);
+  color: var(--parchment);
+  font-size: 11px;
+  padding: 5px 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.p-card-body { padding: 18px 18px 20px; }
+.p-card-price {
+  font-size: 13px;
+  color: var(--rust);
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+.p-card-title {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.p-card-address {
+  color: var(--moss);
+  font-size: 13px;
+  margin: 0 0 14px;
+}
+.p-card-specs {
+  display: flex;
+  gap: 16px;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--charcoal);
+  padding-top: 12px;
+}

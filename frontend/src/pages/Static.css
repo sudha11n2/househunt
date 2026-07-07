@@ -1,0 +1,28 @@
+.static-page { padding-bottom: 100px; }
+.static-hero {
+  padding: 80px 24px 50px;
+  max-width: 780px;
+}
+.static-hero h1 { font-size: clamp(32px, 5vw, 48px); margin: 12px 0 20px; }
+.static-lead { font-size: 17px; color: var(--charcoal); max-width: 60ch; }
+
+.static-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding-top: 20px;
+}
+.static-grid p { color: var(--charcoal); font-size: 14px; margin-top: 10px; }
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+}
+.contact-form { background: var(--parchment); padding: 32px; }
+.contact-details p { font-size: 14px; line-height: 1.7; color: var(--charcoal); }
+
+@media (max-width: 860px) {
+  .static-grid { grid-template-columns: 1fr; }
+  .contact-layout { grid-template-columns: 1fr; }
+}

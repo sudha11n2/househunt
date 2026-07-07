@@ -1,0 +1,15 @@
+.auth-page {
+  background: var(--parchment-dim);
+  padding: 70px 24px 100px;
+  min-height: 70vh;
+}
+.auth-container { display: flex; justify-content: center; }
+.auth-card {
+  background: var(--parchment);
+  padding: 40px;
+  width: 100%;
+  max-width: 440px;
+}
+.auth-title { font-size: 30px; margin: 8px 0 24px; }
+.auth-switch { text-align: center; margin-top: 20px; font-size: 14px; color: var(--moss); }
+.auth-switch a { color: var(--rust); font-weight: 600; }

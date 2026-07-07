@@ -1,0 +1,39 @@
+.listings-page { padding: 48px 24px 100px; }
+.listings-title { font-size: 40px; margin-bottom: 32px; }
+
+.listings-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.filters {
+  background: var(--parchment);
+  padding: 24px;
+  position: sticky;
+  top: 100px;
+}
+
+.listings-results { min-height: 400px; }
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  margin-top: 40px;
+  justify-content: center;
+}
+.page-btn {
+  border: 1px solid var(--line);
+  background: transparent;
+  padding: 8px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+.page-btn.active { background: var(--ink); color: var(--parchment); border-color: var(--ink); }
+
+@media (max-width: 860px) {
+  .listings-layout { grid-template-columns: 1fr; }
+  .filters { position: static; }
+}
